@@ -13,66 +13,46 @@
 </head>
 <body>
 
-<div class="container">
+
   <!-- start out with laying out the sections: left and right-->
-    
-      <div class="front">
-        <img  class = "front_side" src = "images/bg-card-front.png" alt = "front card side">
-        <div class="cardNumber">0000 0000 0000 0000</div>
-        <div class="cardname">Jane Appleseed</div>
-        <div class="month">00/00</div>
-        <div class="logo_holder">
-          <img src="images/card-logo.svg" alt="card_logo" class="logo">
-        </div>
-      </div>
-
+  <section class="left_section">
   
-      
+    <div class="cards_holder">
 
-      <div class="back">
-        <img src="images/bg-card-back.png" alt="back side of card" class="backside">
-        <div class="cvc">000</div>
-      </div>  
-    
-
-  
-  <div class="right_side">
-    <form>
-
-      <div class="card_Nametxt">
-        <label for=" CardHolder Name"> CardHolder Name</label>
-        <input type = "text" placeholder=" e.g. Jane Appleseed">
-      </div>
-    
-      <div class="card_Numtxt">
-        <label for=" Card Number"> Card Number</label>
-        <input type = "text" placeholder=" e.g. 1234 5678 9123 0000">
-      </div>
-      
-      <div class="dates">
+      <div class="frontCard">
+        <img class="front_side" src="images/bg-card-front.png" alt ="front side of card">
         
-        <div class="mainDates_txt">
-          <label for = "date"> EXP. Date (MM/YY) </label>
-          <input type = "text" placeholder=" MM"> 
-          <input type = "text" placeholder=" YY"> 
-        </div>
-          
+        <div class="logo_img">
+          <img class="logo" src = "images/card-logo.svg" alt ="card logo"> 
+        </div>  
+
+        <div id="cardNum" class="card_number">0000 0000 0000 0000</div>
+       
+        <div id="cardName" class="cardName">Jane Appleseed</div>
+        <div id="month" class="card_month">00/00</div>
         
-        <div class="cvc_txt">
-          <label for = "date"> CVC</label>
-          <input type = "text" placeholder="e.g. 123"> 
-        </div>
+        
+      </div>
+
+      
+
+      <div class="backCard">
+        <img class="back_side"  src="images/bg-card-back.png" alt = "back side of card">
+        <div id="cvc" class="cvc">000</div>
       </div>
       
+    </div>
 
     
-      
+  </section>
 
-    </form>
-  
-  </div>
-
+  <section class="right_section">
+    
  
+    CardHolder Name
+    CVC
+    EXP. Date (MM/YY)
+    Card Number
 
   Confirm
 
@@ -82,7 +62,16 @@
   We've added your card details
   Continue
 
-</div> 
+    
+  </section>
+  
+  
+    
+        
+    
+
+      
+
 
   
   

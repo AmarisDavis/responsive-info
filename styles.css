@@ -1,85 +1,111 @@
 *{
-    font-family: 'Space Grotesk', sans-serif;
     margin: 0;
-    width: auto;
-    height: auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk';
 }
 
 body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.left_section{
     background-image: url(images/bg-main-desktop.png);
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-size: cover;
+    width: 30%;
+    position: relative;
+
+}
+.cards_holder{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 160px;
+    left: 150px;
+    gap: 32px;
+}
+
+.frontCard, .backCard{
+    position: relative;
+    width: 350px;
+}
+.front_side, .back_side{
+    width:100%;
+}
+
+.backCard{
+    transform: translateX(75px);
+}
+
+.card_number, .cardName, .card_month, .cvc{
+    color: white;
     position: absolute;
 }
-/*styling for the front and back of the card */
- .front, .cardNumber, .logo, .cardname, .month , .back, .cvc{
-    position: absolute;  
+
+.card_number{
+    top:50%;
+    left:20px;
+    width: max-content;
+    font-size: 22px;
+    letter-spacing: 0.2rem;
 }
 
-.front, .back{ max-width: fit-content; }
+.cardName{
+    top:80%;
+    left: 20px;
+}
 
-.front{
+.card_month{
+    top:80%;
+    left:80%;
+}
+
+
+.logo_img{
+    position: absolute;
+    top: 1.5rem;
+    left: 1.6rem;
+    width: 65px;
+}
+
+.logo{
     width: 100%;
-    top: 175px;
-    left: 200px;
 }
-
-.front_side, .backside{
-    width: 400px;
-}
-
-.back{
-    width: 100%;
-    top: 430px;
-    left: 275px;
-}
-
- .logo{
-    width: 70px;
-    top: 32px;
-    left: 32px;
- }
-
- .cardNumber{
-    top: 120px;
-    font-size: 30px;
-    left: 22px;
-    padding: 10px;
-    color: white;
- }
-/* trying something different with percentage */
- .cardname{
-    top: 80%;
-    left: 7%;
-    color: white;
-
- }
-
- .month{
-    top: 80%;
-    left: 82%;
-    color: white;
- }
 
 .cvc{
-    top: 44%;
-    left: 80%;
-    color: white;
+    top:43%;
+    left:80%;
 }
 
-/*end of cards styling */
 
-.right_side{
-     position: relative;     
-     display: flex;
-     flex-direction: column; 
-     top: 250px;
-     left: 700px;
-     
-     width: 500px;
-     height: 500px;
-     
+
+
+ 
+
+ 
+
+
+
+
+@media screen and (max-width:750px) {
+    .left_section{
+        background-image: url(images/bg-main-mobile.png);
+        width: 100%;
+        max-height: 30%;
+    }
+
+    
 }
+
+
+
+
+
+
+
 
 
 
